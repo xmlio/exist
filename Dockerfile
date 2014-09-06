@@ -1,4 +1,4 @@
-FROM xml.io/jdk7-oracle
+FROM xmlio/jdk7-oracle
 
 MAINTAINER Anthony Frey <anthony@requestresponse.com>
 
