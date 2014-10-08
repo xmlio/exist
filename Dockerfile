@@ -6,10 +6,10 @@ RUN apt-get update
 RUN apt-get install -y curl expect
 
 WORKDIR /tmp
-RUN curl -LO http://downloads.sourceforge.net/exist/Stable/2.1/eXist-db-setup-2.1-rev18721.jar
+RUN curl -LO http://downloads.sourceforge.net/exist/Stable/2.2/eXist-db-setup-2.2RC2.jar
 ADD exist-setup.cmd /tmp/exist-setup.cmd
 RUN expect -f exist-setup.cmd
-RUN rm eXist-db-setup-2.1-rev18721.jar exist-setup.cmd
+RUN rm eXist-db-setup-2.2RC2.jar exist-setup.cmd
 
 VOLUME /data/exist-data
 
