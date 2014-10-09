@@ -1,7 +1,7 @@
 spawn java -jar eXist-db-setup-latest.jar -console
 expect "Select target" { send "/opt/exist\n" }
 expect "press 1" { send "1\n" }
-expect "Data dir" { send "/data/exist\n" }
+expect "Data dir" { send "/data/exist-data\n" }
 expect "press 1" { send "1\n" }
 expect "Enter password" { send "exist\n" }
 expect "Enter password" { send "exist\n" }
