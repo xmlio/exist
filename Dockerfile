@@ -1,9 +1,9 @@
-FROM xmlio/jdk7-oracle
-
-MAINTAINER Anthony Frey <anthony@requestresponse.com>
-
-RUN apt-get update
-RUN apt-get install -y curl expect
+# FROM xmlio/jdk7-oracle
+FROM alpine:3.3
+RUN apk --update add openjdk7
+RUN apk --update add curl
+RUN apk --update add expect
+RUN apk --update add bash && rm -rf /var/cache/apk/*
 
 WORKDIR /tmp
 RUN curl -L -o eXist-db-setup-latest.jar http://sourceforge.net/projects/exist/files/latest/download?source=files
