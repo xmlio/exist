@@ -5,7 +5,7 @@ expect "Data dir" { send "/data/exist-data\n" }
 expect "press 1" { send "1\n" }
 expect "Enter password" { send "exist\n" }
 expect "Enter password" { send "exist\n" }
-expect "Maximum memory" { send "\n" }
+expect "Maximum memory" { send "768\n" }
 expect "Cache memory" { send "\n" }
 expect "press 1" {
     send "1\n"
